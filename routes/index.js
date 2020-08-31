@@ -4,13 +4,7 @@ var path = require('path')
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  // res.render('index', { title: 'Express' });
-  // res.sendFile(path.join(__dirname),'public','hi.js')
-  var options = {
-    root: path.join(__dirname, '/../dist/angular')
-  }
-
-  return res.sendFile('index.html',options);
+  res.render('index', { title: 'Express' });
 });
 
 /* GET home page. */
